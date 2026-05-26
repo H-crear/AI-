@@ -11,10 +11,11 @@ export default function TopNav({ links }) {
         </div>
       </div>
       <nav className="main-links">
-        <NavLink to="/" end>首页</NavLink>
-        <NavLink to="/archive">我的小说</NavLink>
-        <a href="#">模板</a>
-        <a href="#">价格</a>
+        {links.map((link) => (
+          link.to === '#'
+            ? <a key={link.label} href="#">{link.label}</a>
+            : <NavLink key={link.label} to={link.to} end={link.to === '/'}>{link.label}</NavLink>
+        ))}
       </nav>
       <button className="ink-btn">开始创作 ✦</button>
     </header>

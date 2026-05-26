@@ -1,13 +1,14 @@
-export const topNav = ['首页', '我的小说', '模板', '价格']
-
-export const archiveBooks = [
-  { title: '《我靠AI翻盘人生》', genre: '都市逆袭', words: '已写 12 章 · 2.3 万字', update: '更新至 第6章' },
-  { title: '《我在平行世界当导演》', genre: '都市娱乐', words: '已写 18 章 · 3.6 万字', update: '更新至 第9章' },
-  { title: '《她在古代做情报局长》', genre: '古言权谋', words: '已写 15 章 · 2.8 万字', update: '更新至 第9章' }
+export const topNav = [
+  { label: '首页', to: '/' },
+  { label: '我的小说', to: '/archive' },
+  { label: '模板', to: '#' },
+  { label: '价格', to: '#' }
 ]
 
+export const inspirationChips = ['都市逆袭', '古言权谋', '悬疑反转', '言情虐文', '科幻脑洞']
+
 export const chapterNotes = [
-  '本章冲突偏弱：建议加入公开会议质疑场景',
-  '建议加强对手压迫感，推动主角反击动机',
-  '可生成三种改写：强冲突版 / 反转版 / 情绪版'
+  { title: '本章冲突偏弱', body: '对手质疑偏切入点较单一，建议升级冲突强度，增加公开质疑戏剧节点。' },
+  { title: '建议加入公开会议质疑', body: '在更大范围会议上提出质疑，引发上级与客户关注，强化主角压力。' },
+  { title: '可生成三种改写方案', body: '方案一：强势质疑型；方案二：迂回打压型；方案三：数据反击型。' }
 ]
