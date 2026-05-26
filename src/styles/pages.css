@@ -1,0 +1,124 @@
+.home-hero-title { letter-spacing: 2px; }
+.home-origin-list { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:10px; }
+.home-origin-item { border:1px solid #dfd1bf; border-radius:12px; padding:12px; background:#fffdf8; font-size:18px; }
+.continue-writing { margin-top:12px; padding:16px; display:flex; justify-content:space-between; align-items:center; }
+.continue-writing h4{ margin:0 0 6px; font-size:30px; color:var(--ink-navy); }
+.continue-writing p{ margin:0; font-size:20px; color:var(--ink-soft); }
+
+.archive-dashboard{display:grid;grid-template-columns:1fr 352px;gap:22px;padding-top:8px}
+.archive-column-main{display:flex;flex-direction:column;gap:16px}
+.archive-header{padding:26px 26px 22px}
+.archive-header h2{margin:6px 0;font-size:54px;color:var(--ink-navy)}
+.archive-header .subline{font-size:21px;color:var(--ink-soft);line-height:1.7;max-width:90%}
+.new-story-entry{padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+.new-story-entry h4{margin:0 0 6px;font-size:27px;color:var(--ink-navy)}
+.new-story-entry p{margin:0;color:var(--ink-soft)}
+.novel-list{display:flex;flex-direction:column;gap:14px}
+.novel-card{padding:18px;display:grid;grid-template-columns:136px 1fr;gap:18px}
+.cover-art{border-radius:12px;background:linear-gradient(165deg,#1d336e 4%,#35589a 38%,#6c88bc 68%,#ccb27c 100%);box-shadow:var(--shadow-note);position:relative;overflow:hidden}
+.cover-art::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 16%,rgba(255,255,255,.26),transparent 34%),radial-gradient(circle at 80% 70%,rgba(255,226,172,.24),transparent 40%)}
+.cover-art::after{content:'小说封面';position:absolute;left:14px;bottom:12px;color:#f8f2e8;font-size:14px;letter-spacing:1px}
+.novel-main{padding-top:2px}
+.novel-title{margin:0 0 8px;color:var(--ink-navy);font-size:31px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.novel-main p{margin:6px 0;font-size:18px;color:#3a3a34;line-height:1.6}
+.status-line{padding:9px 10px;border-left:3px solid var(--gold-light);background:#fbf4e8;border-radius:6px}
+.ai-slip{margin-top:10px;padding:11px 12px;border:1px dashed #d8c6a4;border-radius:10px;background:#f9f0df;color:#4f4a40;font-size:16px;line-height:1.7}
+.novel-actions{display:flex;gap:10px;margin-top:12px}
+.archive-column-side{display:flex;flex-direction:column;gap:14px;padding-top:2px}
+.today-advice,.recent-activity{padding:18px}
+.today-advice h4,.recent-activity h4{margin:0 0 10px;color:var(--ink-navy);font-size:28px}
+.today-advice p{margin:0;color:#3f3a33;line-height:1.75}
+.recent-activity ul{margin:0;padding-left:18px}
+.recent-activity li{margin-bottom:9px;line-height:1.65;color:#3f3a33}
+
+.desk-workspace{display:grid;grid-template-columns:280px 1fr 328px;gap:18px;padding-top:10px}
+.desk-left{padding:14px 14px 12px}
+.novel-brief{display:grid;grid-template-columns:84px 1fr;gap:12px;padding-bottom:10px;border-bottom:1px solid #e2d7c6;margin-bottom:10px}
+.novel-brief h4{margin:0 0 6px;font-size:21px;color:var(--ink-navy);line-height:1.3}
+.novel-brief p{margin:3px 0;color:#5b5a55;font-size:14px}
+.chapter-index-title{margin:8px 0 8px;font-size:18px;color:var(--ink-navy)}
+
+.writing-paper{padding:26px 30px 18px;min-height:860px}
+.writing-head p{margin:0;color:#5f6380;font-size:18px;text-align:center}
+.writing-head h2{margin:8px 0 10px;color:var(--ink-navy);font-size:46px;letter-spacing:2px;text-align:center}
+.writing-head h3{margin:0 0 18px;font-size:24px;color:#283a6f;text-align:center;font-weight:600}
+.writing-content p{font-size:32px;line-height:1.95;margin:0 0 18px;color:#2f2a24;text-indent:2em}
+
+.ai-copilot{padding:8px 2px}
+
+
+/* stage 3.5 refinement */
+.desk-workspace{grid-template-columns:286px 1fr 332px;gap:20px;padding-top:14px}
+.desk-left{padding:16px 14px 14px;background:linear-gradient(180deg,#fffdf8,#f8f2e7)}
+.chapter-list{position:relative}
+.chapter-list::before{content:"";position:absolute;left:10px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,#e2d7c6,#f0e8da)}
+.chapter-list li{padding:10px 10px 10px 16px;border-left:none;background:transparent}
+.chapter-list li span{position:relative}
+.chapter-list li span::before{content:"";position:absolute;left:-10px;top:50%;width:6px;height:1px;background:#d9cebd}
+.chapter-list li.done i{font-size:12px}
+.chapter-list li.active{box-shadow:0 8px 16px rgba(26,43,91,.22)}
+
+.writing-paper{padding:30px 34px 18px;min-height:900px;background:
+  repeating-linear-gradient(180deg, rgba(81,92,127,.04) 0 1px, transparent 1px 66px),
+  radial-gradient(circle at 12% 0%, rgba(255,255,255,.6), transparent 36%),
+  linear-gradient(180deg,#fffef9,#fbf6ee)}
+.writing-paper::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:var(--radius-card);box-shadow:inset 0 1px 0 rgba(255,255,255,.6), inset 0 -20px 40px rgba(176,158,121,.05)}
+.writing-head{padding-bottom:14px;border-bottom:1px solid #e5dbc9;margin-bottom:18px}
+.writing-head p{font-size:17px;letter-spacing:1px;color:#6b6f85}
+.writing-head h2{font-size:48px;letter-spacing:3px;margin:10px 0}
+.writing-head h3{font-size:23px;color:#2f4275}
+.writing-content p{font-size:31px;line-height:2.02;margin:0 0 22px}
+
+.editor-toolbar{margin-top:10px;padding-top:12px;font-size:13px;color:#7a756b}
+.tool-icons{letter-spacing:1px;font-size:13px;opacity:.85}
+
+.ai-copilot{padding:8px 4px}
+.copilot-sub{margin-bottom:12px}
+.quick-actions{gap:9px;margin-bottom:16px}
+.note-column{gap:14px}
+.note-column .sticky-note:nth-child(2){transform:rotate(-0.6deg)}
+.note-column .sticky-note:nth-child(1), .note-column .sticky-note:nth-child(3){transform:rotate(0.4deg)}
+.sticky-note{padding:15px 13px}
+.sticky-note .tape{right:14px;top:-5px;width:24px;height:11px;opacity:.72}
+
+.outline-workspace{display:grid;grid-template-columns:272px 1fr 330px;gap:18px;padding-top:12px}
+.outline-main{display:flex;flex-direction:column;gap:14px}
+.volume-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.chapter-map{padding:18px}
+.chapter-map h4,.rhythm-wrap h4{margin:0 0 12px;color:var(--ink-navy);font-size:28px}
+.chapter-route{position:relative;padding-left:8px;display:flex;flex-direction:column;gap:12px}
+.chapter-route::before{content:'';position:absolute;left:14px;top:8px;bottom:8px;width:1px;background:#d9ccb8}
+.route-node{display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:flex-start}
+.route-dot{margin-top:8px;width:10px;height:10px;border-radius:50%;background:#d6c8b0;border:2px solid #f8f2e8;box-shadow:0 0 0 1px #cfbe9d}
+.route-node.done .route-dot{background:var(--gold)}
+.route-node h5{margin:0 0 5px;font-size:21px;color:var(--ink-navy)}
+.route-node p{margin:3px 0;color:#46413a;font-size:16px;line-height:1.6}
+.rhythm-wrap{padding:16px 18px}
+
+.character-workspace{display:grid;grid-template-columns:272px 1fr 330px;gap:18px;padding-top:12px}
+.character-main{display:flex;flex-direction:column;gap:14px}
+.character-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.character-lower{display:grid;grid-template-columns:1.1fr .9fr;gap:12px}
+
+.world-workspace{display:grid;grid-template-columns:272px 1fr 332px;gap:18px;padding-top:12px}
+.world-main{display:flex;flex-direction:column;gap:14px}
+.world-rules-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.boundary-wrap{padding:14px}
+.ability-boundary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+
+.foreshadow-workspace{display:grid;grid-template-columns:272px 1fr 330px;gap:18px;padding-top:12px}
+.foreshadow-main{display:flex;flex-direction:column;gap:14px}
+.overview-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.overview-slip{padding:12px 10px;text-align:center;position:relative}
+.overview-slip::after{content:'';position:absolute;right:10px;top:0;border-left:10px solid transparent;border-top:10px solid #d9bc82}
+.overview-slip span{display:block;font-size:14px;color:#5e5960}
+.overview-slip b{display:block;margin-top:6px;font-size:26px;color:var(--gold)}
+.foreshadow-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+
+.library-workspace{display:grid;grid-template-columns:272px 1fr 332px;gap:18px;padding-top:12px}
+.library-main{display:flex;flex-direction:column;gap:14px}
+.category-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.materials-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.folder-wrap{padding:14px}
+.folder-wrap h4{margin:0 0 10px;color:var(--ink-navy);font-size:26px}
+.folder-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
