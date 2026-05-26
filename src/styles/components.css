@@ -31,7 +31,8 @@
 .book-cover::after{content:'封面';position:absolute;left:10px;bottom:8px;color:#f8f2e8;font-size:12px}
 
 .chapter-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
-.chapter-list li{display:flex;justify-content:space-between;align-items:center;padding:9px 10px;border-left:2px solid #ddd3c3;color:#4e5b7a;border-radius:8px;font-size:16px}
+.chapter-list li{border-left:2px solid #ddd3c3;color:#4e5b7a;border-radius:8px;font-size:16px}
+.chapter-list button{width:100%;display:flex;justify-content:space-between;align-items:center;padding:9px 10px;border:0;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer}
 .chapter-list li.done i{color:var(--gold)}
 .chapter-list li.todo i{color:#c9bfaf}
 .chapter-list li.active{background:var(--ink-navy);color:#fff;border-left-color:var(--gold-light);position:relative}

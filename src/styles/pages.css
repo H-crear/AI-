@@ -52,7 +52,8 @@
 .desk-left{padding:16px 14px 14px;background:linear-gradient(180deg,#fffdf8,#f8f2e7)}
 .chapter-list{position:relative}
 .chapter-list::before{content:"";position:absolute;left:10px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,#e2d7c6,#f0e8da)}
-.chapter-list li{padding:10px 10px 10px 16px;border-left:none;background:transparent}
+.chapter-list li{border-left:none;background:transparent}
+.chapter-list button{padding:10px 10px 10px 16px}
 .chapter-list li span{position:relative}
 .chapter-list li span::before{content:"";position:absolute;left:-10px;top:50%;width:6px;height:1px;background:#d9cebd}
 .chapter-list li.done i{font-size:12px}
@@ -68,6 +69,7 @@
 .writing-head h2{font-size:48px;letter-spacing:3px;margin:10px 0}
 .writing-head h3{font-size:23px;color:#2f4275}
 .writing-content p{font-size:31px;line-height:2.02;margin:0 0 22px}
+.writing-editor{width:100%;min-height:610px;border:0;resize:vertical;background:transparent;color:#2f2a24;font-family:inherit;font-size:31px;line-height:2.02;outline:none;padding:0;position:relative;z-index:1}
 
 .editor-toolbar{margin-top:10px;padding-top:12px;font-size:13px;color:#7a756b}
 .tool-icons{letter-spacing:1px;font-size:13px;opacity:.85}
