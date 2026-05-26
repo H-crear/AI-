@@ -1,18 +1,12 @@
 import PaperCard from '../components/PaperCard'
 import NoteCard from '../components/NoteCard'
+import SideMenu from '../components/SideMenu'
 import SectionTitle from '../components/SectionTitle'
 
 export default function ForeshadowPage() {
   return (
     <div className="page workspace-layout">
-      <aside className="workspace-left paper-card">
-        <h3>伏笔与线索</h3>
-        <ul>
-          <li className="active">伏笔总览</li>
-          <li>线索时间轴</li>
-          <li>回收检查</li>
-        </ul>
-      </aside>
+      <SideMenu title="伏笔与线索" items=[{ label: '伏笔总览', active: true },{ label: '线索时间轴', active: false },{ label: '回收检查', active: false }] />
 
       <section className="workspace-main">
         <PaperCard className="workspace-head">

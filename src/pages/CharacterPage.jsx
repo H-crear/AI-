@@ -1,18 +1,12 @@
 import PaperCard from '../components/PaperCard'
 import NoteCard from '../components/NoteCard'
+import SideMenu from '../components/SideMenu'
 import SectionTitle from '../components/SectionTitle'
 
 export default function CharacterPage() {
   return (
     <div className="page workspace-layout">
-      <aside className="workspace-left paper-card">
-        <h3>人物设定</h3>
-        <ul>
-          <li className="active">角色档案</li>
-          <li>人物关系图</li>
-          <li>成长线</li>
-        </ul>
-      </aside>
+      <SideMenu title="人物设定" items=[{ label: '角色档案', active: true },{ label: '人物关系图', active: false },{ label: '成长线', active: false }] />
 
       <section className="workspace-main">
         <PaperCard className="workspace-head"><h2>林默（主角）</h2><p>理性内敛，擅长观察与思考，目标是用AI改变行业。</p></PaperCard>

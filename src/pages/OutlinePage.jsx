@@ -1,5 +1,6 @@
 import PaperCard from '../components/PaperCard'
 import NoteCard from '../components/NoteCard'
+import SideMenu from '../components/SideMenu'
 import SectionTitle from '../components/SectionTitle'
 
 const volumes = [
@@ -12,14 +13,7 @@ const volumes = [
 export default function OutlinePage() {
   return (
     <div className="page workspace-layout">
-      <aside className="workspace-left paper-card">
-        <h3>故事结构</h3>
-        <ul>
-          <li className="active">全书大纲</li>
-          <li>卷纲规划</li>
-          <li>节奏设计</li>
-        </ul>
-      </aside>
+      <SideMenu title="故事结构" items=[{ label: '全书大纲', active: true },{ label: '卷纲规划', active: false },{ label: '节奏设计', active: false }] />
 
       <section className="workspace-main">
         <PaperCard className="workspace-head">

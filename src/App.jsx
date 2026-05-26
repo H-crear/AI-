@@ -9,6 +9,7 @@ import WorldPage from './pages/WorldPage'
 import ForeshadowPage from './pages/ForeshadowPage'
 import LibraryPage from './pages/LibraryPage'
 import { topNav } from './data/siteData'
+import FooterBar from './components/FooterBar'
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/library" element={<LibraryPage />} />
         </Routes>
       </main>
+      <div className="page-shell"><FooterBar /></div>
     </div>
   )
 }

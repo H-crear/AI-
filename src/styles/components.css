@@ -10,3 +10,5 @@
 .section-title h2{margin:0;color:var(--ink-900);font-size:56px;letter-spacing:2px}
 .section-title p{margin:8px 0 0;color:#4b5c84;font-size:24px}
 .paper-pin{position:absolute;right:14px;top:-8px;color:#b69860;font-size:20px}
+.footer-bar{margin-top:20px;border-top:1px solid #e7dccb;padding:18px 8px;color:#6f6a62;display:flex;justify-content:space-between;font-size:16px}
+.brand-watermark{display:flex;gap:8px;align-items:center;color:#4f5d7f}

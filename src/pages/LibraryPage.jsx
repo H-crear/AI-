@@ -1,18 +1,12 @@
 import PaperCard from '../components/PaperCard'
 import NoteCard from '../components/NoteCard'
+import SideMenu from '../components/SideMenu'
 import SectionTitle from '../components/SectionTitle'
 
 export default function LibraryPage() {
   return (
     <div className="page workspace-layout">
-      <aside className="workspace-left paper-card">
-        <h3>资料库 / 灵感库</h3>
-        <ul>
-          <li className="active">灵感碎片</li>
-          <li>设定卡片</li>
-          <li>素材摘录</li>
-        </ul>
-      </aside>
+      <SideMenu title="资料库 / 灵感库" items=[{ label: '灵感碎片', active: true },{ label: '设定卡片', active: false },{ label: '素材摘录', active: false }] />
 
       <section className="workspace-main">
         <PaperCard className="workspace-head">
