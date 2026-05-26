@@ -1,0 +1,17 @@
+:root {
+  --bg: #f6f1e8;
+  --paper: #fcf8f1;
+  --note: #f8efd9;
+  --ink-900: #15295f;
+  --ink-700: #334a7d;
+  --gold: #bc9a5a;
+  --line: #ddd1be;
+  --shadow: 0 10px 26px rgba(77, 59, 24, 0.12);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #2f2a24;
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', STSong, serif;
+}

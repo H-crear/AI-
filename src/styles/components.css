@@ -1,0 +1,14 @@
+.top-nav{height:88px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e7dccb;background:#f8f4ed}
+.brand-mark{display:flex;align-items:center;gap:12px}.brand-mark h1{margin:0;color:var(--ink-900);font-size:44px}.brand-mark p{margin:0;color:#5a6281;font-size:18px}.logo{font-size:32px}
+.main-links{display:flex;gap:36px}.main-links a{color:#1d2f63;text-decoration:none;padding:6px 2px;border-bottom:2px solid transparent;font-size:30px}.main-links .active{border-color:var(--gold)}
+.ink-btn{background:var(--ink-900);color:#fff;border:1px solid #5b70a1;padding:12px 24px;border-radius:999px;font-size:26px;box-shadow:0 6px 14px rgba(22,41,95,.18)}
+.paper-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);position:relative}
+.paper-card::after{content:'';position:absolute;inset:0;border-radius:18px;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.5),transparent 50%)}
+.note-card{background:var(--note);border:1px solid #d9c9a9;border-radius:8px;padding:16px;box-shadow:0 6px 16px rgba(96,74,27,.1)}
+.note-card h4{margin:0 0 10px;color:#263a72;font-size:30px}.note-card div{font-size:23px;line-height:1.7}
+.bookmark{position:absolute;right:18px;top:-8px;width:22px;height:54px;background:var(--gold);border-radius:0 0 6px 6px}
+.section-title h2{margin:0;color:var(--ink-900);font-size:56px;letter-spacing:2px}
+.section-title p{margin:8px 0 0;color:#4b5c84;font-size:24px}
+.paper-pin{position:absolute;right:14px;top:-8px;color:#b69860;font-size:20px}
+.footer-bar{margin-top:20px;border-top:1px solid #e7dccb;padding:18px 8px;color:#6f6a62;display:flex;justify-content:space-between;font-size:16px}
+.brand-watermark{display:flex;gap:8px;align-items:center;color:#4f5d7f}
