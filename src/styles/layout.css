@@ -18,3 +18,10 @@
 .left-rail{padding:16px}.left-rail h3{margin:0 0 10px;font-size:30px}.left-rail ul{list-style:none;padding:0;margin:0}.left-rail li{padding:10px 12px;border-radius:8px;font-size:24px}.left-rail li.active{background:var(--ink-900);color:#fff}
 .manuscript{padding:30px}.manuscript h2{font-size:62px;margin:0 0 8px;color:var(--ink-900)}.chapter-goal{font-size:30px}.content{margin-top:16px;font-size:36px;line-height:1.9;min-height:640px}
 .right-notes{display:flex;flex-direction:column;gap:12px}.assistant-title{font-size:34px;color:var(--ink-900);padding:6px 0}
+
+.archive-layout{display:grid;grid-template-columns:1fr 340px;gap:16px}
+.archive-main{display:flex;flex-direction:column;gap:14px}
+.continue-card{padding:24px;display:flex;justify-content:space-between;align-items:center}.continue-card h3{margin:0 0 8px;font-size:28px}.continue-card h4{margin:0 0 8px;font-size:40px;color:var(--ink-900)}.continue-card p{margin:0;font-size:22px}
+.works-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.work-item{padding:16px;min-height:220px}.work-item h4{margin:8px 0;font-size:28px;color:var(--ink-900)}.work-item p{margin:4px 0;font-size:20px}.work-item small{color:#6a645a;font-size:16px}
+.archive-side{display:flex;flex-direction:column;gap:14px}.side-panel{padding:20px}.side-panel h3{margin:0 0 10px;font-size:32px}.side-panel ul{padding-left:20px;margin:0}.side-panel li{margin-bottom:10px;font-size:20px;line-height:1.5}
+.week-words{font-size:54px;color:var(--ink-900);margin:10px 0}.week-bar{height:8px;background:#e9dfcf;border-radius:99px;overflow:hidden;margin-bottom:10px}.week-bar span{display:block;width:58%;height:100%;background:var(--ink-900)}
