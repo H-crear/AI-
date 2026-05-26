@@ -1,30 +1,31 @@
+import PaperCard from '../components/PaperCard'
+import NoteCard from '../components/NoteCard'
+import { chapterNotes } from '../data/siteData'
+
 export default function WritingDeskPage() {
   return (
-    <section className="page-wrap desk-layout">
-      <aside className="paper left-notes">
-        <h3>章节便签</h3>
+    <div className="page writing-layout">
+      <aside className="left-rail paper-card">
+        <h3>章节目录</h3>
         <ul>
-          <li>第 6 章目标：公开质疑会，主角反击</li>
-          <li>冲突升级：导师立场动摇</li>
-          <li>伏笔回收：第三章合同细节</li>
+          <li>第1章 破局</li><li>第2章 新机会</li><li>第3章 第一个项目</li>
+          <li className="active">第6章 竞争对手</li><li>第7章 公开质疑</li>
         </ul>
       </aside>
 
-      <article className="paper manuscript">
-        <h2>第 6 章：风口前夜</h2>
-        <p className="draft">
-          林跃站在会议室门口，手里攥着打印好的数据清单。窗外是雨后的城市，玻璃上映着他略显苍白的脸……
-        </p>
-        <p className="editor-note">AI 批注：本段氛围很好，可在结尾增加“突然的阻力”制造钩子。</p>
-      </article>
+      <PaperCard className="manuscript">
+        <h2>第6章 竞争对手</h2>
+        <p className="chapter-goal">本章目标：让主角第一次面对公开质疑</p>
+        <div className="content">
+          会议室里，投影幕布上是林默团队熬了三天三夜做出的项目方案。林默站在台上，指尖轻轻按着遥控器，声音平稳地讲解着每一个细节……
+        </div>
+      </PaperCard>
 
-      <aside className="paper right-tools">
-        <h3>编辑助手</h3>
-        <button>续写 300 字</button>
-        <button>增强冲突</button>
-        <button>润色文风</button>
-        <button>生成下一章提纲</button>
+      <aside className="right-notes">
+        {chapterNotes.map((note) => (
+          <NoteCard key={note} title="AI 编辑批注">{note}</NoteCard>
+        ))}
       </aside>
-    </section>
+    </div>
   )
 }
