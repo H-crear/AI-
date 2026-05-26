@@ -4,7 +4,9 @@ export const topNav = [
   { label: '写作台', to: '/desk' },
   { label: '大纲', to: '/outline' },
   { label: '人物', to: '/character' },
-  { label: '世界观', to: '/world' }
+  { label: '世界观', to: '/world' },
+  { label: '伏笔线索', to: '/foreshadow' },
+  { label: '资料库', to: '/library' }
 ]
 
 export const inspirationChips = ['都市逆袭', '古言权谋', '悬疑反转', '言情虐文', '科幻脑洞']

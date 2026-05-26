@@ -6,6 +6,8 @@ import WritingDeskPage from './pages/WritingDeskPage'
 import OutlinePage from './pages/OutlinePage'
 import CharacterPage from './pages/CharacterPage'
 import WorldPage from './pages/WorldPage'
+import ForeshadowPage from './pages/ForeshadowPage'
+import LibraryPage from './pages/LibraryPage'
 import { topNav } from './data/siteData'
 
 export default function App() {
@@ -20,6 +22,8 @@ export default function App() {
           <Route path="/outline" element={<OutlinePage />} />
           <Route path="/character" element={<CharacterPage />} />
           <Route path="/world" element={<WorldPage />} />
+          <Route path="/foreshadow" element={<ForeshadowPage />} />
+          <Route path="/library" element={<LibraryPage />} />
         </Routes>
       </main>
     </div>
