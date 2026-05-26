@@ -1,13 +1,29 @@
 :root {
   --bg-paper: #f6f1e8;
   --bg-cream: #fcf8f1;
+  --paper-warm: #fffaf0;
+  --paper-aged: #f1e5d0;
+  --paper-note: #f8eccd;
+  --paper-archive: #fbf4e6;
   --ink-navy: #15295f;
+  --ink-deep: #0f1f4d;
   --ink-soft: #4b5c84;
+  --ink-muted: #68708a;
   --gold: #bc9a5a;
   --gold-light: #d8c08f;
+  --gold-pale: #ead8ad;
+  --sepia: #7e6845;
   --muted: #8a8275;
-  --shadow-paper: 0 10px 26px rgba(77, 59, 24, 0.12);
-  --shadow-note: 0 4px 12px rgba(96, 74, 27, 0.1);
-  --radius-card: 18px;
-  --radius-note: 10px;
+  --line-paper: rgba(43, 63, 112, 0.08);
+  --wash-blue: rgba(103, 132, 181, 0.16);
+  --wash-gold: rgba(206, 174, 105, 0.16);
+  --shadow-paper: 0 18px 44px rgba(65, 49, 20, 0.13);
+  --shadow-paper-soft: 0 10px 24px rgba(65, 49, 20, 0.09);
+  --shadow-note: 0 7px 18px rgba(96, 74, 27, 0.13);
+  --shadow-inset-paper: inset 0 1px 0 rgba(255, 255, 255, 0.78), inset 0 -18px 34px rgba(142, 112, 61, 0.05);
+  --radius-card: 20px;
+  --radius-note: 12px;
+  --radius-tag: 999px;
+  --page-max: 1440px;
+  --page-pad: clamp(16px, 3vw, 34px);
 }

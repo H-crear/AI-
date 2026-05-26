@@ -1,10 +1,78 @@
 * { box-sizing: border-box; }
+
+html, body, #root { min-height: 100%; }
+
+html { overflow-x: hidden; }
+
 body {
   margin: 0;
   color: #2f2a24;
   font-family: 'Noto Serif SC', 'Source Han Serif SC', STSong, serif;
   background:
-    radial-gradient(circle at 8% 26%, rgba(147, 164, 199, 0.23), transparent 22%),
-    radial-gradient(circle at 92% 34%, rgba(147, 164, 199, 0.2), transparent 26%),
+    radial-gradient(circle at 10% 14%, rgba(115, 142, 188, 0.18), transparent 26%),
+    radial-gradient(circle at 92% 30%, rgba(199, 169, 104, 0.16), transparent 24%),
+    linear-gradient(90deg, rgba(24, 42, 91, 0.025) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(126, 104, 69, 0.025) 1px, transparent 1px),
     var(--bg-paper);
+  background-size: auto, auto, 34px 34px, 34px 34px, auto;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+button, input, textarea { font: inherit; }
+button { color: inherit; }
+img, svg, canvas, textarea { max-width: 100%; }
+
+::selection { background: rgba(21, 41, 95, 0.9); color: #fff8ea; }
+
+.app {
+  min-height: 100vh;
+  min-width: 0;
+  overflow-x: clip;
+  position: relative;
+}
+
+.app::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.34), transparent 32%),
+    repeating-linear-gradient(0deg, rgba(82, 70, 47, 0.018) 0 1px, transparent 1px 5px);
+  mix-blend-mode: multiply;
+  opacity: .7;
+  z-index: -1;
+}
+
+.page-shell {
+  width: min(calc(100% - var(--page-pad) * 2), var(--page-max));
+  margin: 0 auto;
+  min-width: 0;
+}
+
+.page {
+  position: relative;
+  min-width: 0;
+  padding-top: clamp(18px, 2.8vw, 36px);
+}
+
+.page > *,
+.page-shell > *,
+.archive-dashboard > *,
+.desk-workspace > *,
+.outline-workspace > *,
+.character-workspace > *,
+.world-workspace > *,
+.foreshadow-workspace > *,
+.library-workspace > * {
+  min-width: 0;
+}
+
+p, h1, h2, h3, h4, h5, li, div { overflow-wrap: break-word; }
+
+a { color: inherit; }
+
+@media (max-width: 680px) {
+  .page-shell { width: min(calc(100% - 24px), var(--page-max)); }
 }
