@@ -1,5 +1,6 @@
 import PaperCard from '../components/PaperCard'
 import NoteCard from '../components/NoteCard'
+import SectionTitle from '../components/SectionTitle'
 
 export default function WorldPage() {
   return (

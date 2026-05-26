@@ -7,3 +7,6 @@
 .note-card{background:var(--note);border:1px solid #d9c9a9;border-radius:8px;padding:16px;box-shadow:0 6px 16px rgba(96,74,27,.1)}
 .note-card h4{margin:0 0 10px;color:#263a72;font-size:30px}.note-card div{font-size:23px;line-height:1.7}
 .bookmark{position:absolute;right:18px;top:-8px;width:22px;height:54px;background:var(--gold);border-radius:0 0 6px 6px}
+.section-title h2{margin:0;color:var(--ink-900);font-size:56px;letter-spacing:2px}
+.section-title p{margin:8px 0 0;color:#4b5c84;font-size:24px}
+.paper-pin{position:absolute;right:14px;top:-8px;color:#b69860;font-size:20px}

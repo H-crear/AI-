@@ -39,3 +39,7 @@
 .clue-row b{font-size:24px;color:var(--ink-900)}.clue-row span{font-size:18px;color:#4f5d7f}.clue-row em{font-style:normal;color:#8a7447;font-size:18px}
 .memo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .memo-card{padding:18px;min-height:150px}.memo-card h4{margin:0 0 8px;font-size:28px;color:var(--ink-900)}.memo-card p{margin:0;font-size:21px;line-height:1.7}
+
+.top-space-note{font-size:18px;color:#7f6a44;margin-top:6px}
+.workspace-right .note-card:nth-child(2n){transform:rotate(-0.4deg)}
+.workspace-right .note-card:nth-child(2n+1){transform:rotate(0.5deg)}

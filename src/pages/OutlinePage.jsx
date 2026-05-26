@@ -1,5 +1,6 @@
 import PaperCard from '../components/PaperCard'
 import NoteCard from '../components/NoteCard'
+import SectionTitle from '../components/SectionTitle'
 
 const volumes = [
   ['卷一', '重启人生（1-30章）', '约 60,000 字'],
@@ -22,8 +23,7 @@ export default function OutlinePage() {
 
       <section className="workspace-main">
         <PaperCard className="workspace-head">
-          <h2>大纲规划</h2>
-          <p>梳理故事脉络，搭建完整剧情框架</p>
+          <SectionTitle title="大纲规划" subtitle="梳理故事脉络，搭建完整剧情框架" />
         </PaperCard>
         <PaperCard className="volume-list">
           {volumes.map((v) => (

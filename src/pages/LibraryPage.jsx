@@ -1,5 +1,6 @@
 import PaperCard from '../components/PaperCard'
 import NoteCard from '../components/NoteCard'
+import SectionTitle from '../components/SectionTitle'
 
 export default function LibraryPage() {
   return (
@@ -15,8 +16,7 @@ export default function LibraryPage() {
 
       <section className="workspace-main">
         <PaperCard className="workspace-head">
-          <h2>资料库 / 灵感库</h2>
-          <p>沉淀你的灵感、设定与素材，随时调用到创作中。</p>
+          <SectionTitle title="资料库 / 灵感库" subtitle="沉淀你的灵感、设定与素材，随时调用到创作中。" />
         </PaperCard>
         <div className="memo-grid">
           <PaperCard className="memo-card"><h4>时间回溯者</h4><p>如果能回到过去，你最想改变什么？</p></PaperCard>

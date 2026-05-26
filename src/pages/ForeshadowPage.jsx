@@ -1,5 +1,6 @@
 import PaperCard from '../components/PaperCard'
 import NoteCard from '../components/NoteCard'
+import SectionTitle from '../components/SectionTitle'
 
 export default function ForeshadowPage() {
   return (
@@ -15,8 +16,7 @@ export default function ForeshadowPage() {
 
       <section className="workspace-main">
         <PaperCard className="workspace-head">
-          <h2>伏笔与线索</h2>
-          <p>管理埋点、推进节奏，避免遗忘关键线索。</p>
+          <SectionTitle title="伏笔与线索" subtitle="管理埋点、推进节奏，避免遗忘关键线索。" />
         </PaperCard>
         <PaperCard className="clue-board">
           <div className="clue-row"><b>第3章 合同条款异常</b><span>埋设：第3章</span><span>回收：第6章</span><em>进行中</em></div>
