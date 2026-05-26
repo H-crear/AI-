@@ -1,8 +1,10 @@
 export const topNav = [
   { label: '首页', to: '/' },
   { label: '我的小说', to: '/archive' },
-  { label: '模板', to: '#' },
-  { label: '价格', to: '#' }
+  { label: '写作台', to: '/desk' },
+  { label: '大纲', to: '/outline' },
+  { label: '人物', to: '/character' },
+  { label: '世界观', to: '/world' }
 ]
 
 export const inspirationChips = ['都市逆袭', '古言权谋', '悬疑反转', '言情虐文', '科幻脑洞']
