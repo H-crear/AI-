@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: #2f2a24;
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', STSong, serif;
+  background:
+    radial-gradient(circle at 8% 26%, rgba(147, 164, 199, 0.23), transparent 22%),
+    radial-gradient(circle at 92% 34%, rgba(147, 164, 199, 0.2), transparent 26%),
+    var(--bg-paper);
+}

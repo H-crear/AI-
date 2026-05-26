@@ -1,0 +1,13 @@
+:root {
+  --bg-paper: #f6f1e8;
+  --bg-cream: #fcf8f1;
+  --ink-navy: #15295f;
+  --ink-soft: #4b5c84;
+  --gold: #bc9a5a;
+  --gold-light: #d8c08f;
+  --muted: #8a8275;
+  --shadow-paper: 0 10px 26px rgba(77, 59, 24, 0.12);
+  --shadow-note: 0 4px 12px rgba(96, 74, 27, 0.1);
+  --radius-card: 18px;
+  --radius-note: 10px;
+}
